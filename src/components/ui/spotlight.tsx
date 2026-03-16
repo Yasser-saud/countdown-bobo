@@ -23,7 +23,7 @@ export const Spotlight = ({
 	height = 1380,
 	smallWidth = 240,
 	duration = 7,
-	xOffset = 100,
+	xOffset = 130,
 }: SpotlightProps = {}) => {
 	return (
 		<motion.div
