@@ -10,7 +10,7 @@ import {PoemBlock} from './PoemBlock';
 import {poems} from './poems';
 
 export default function WaitlistPage() {
-	const now = new Date('2026-03-20T00:00:00');
+	const now = new Date();
 	const targetDate = new Date('2026-03-25T00:00:00');
 
 	const {days, hours, minutes, seconds, isExpired} = useCountdown(targetDate);
