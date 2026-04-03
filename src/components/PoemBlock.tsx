@@ -19,7 +19,7 @@ export function renderPoemVerses(text: string) {
 
 	return (
 		<motion.div
-			className="glass p-5 flex-col"
+			className="glass p-5 flex-col shrink-0 h-auto gap-5 text-center"
 			initial={{opacity: 0, y: 20}}
 			animate={{opacity: 1, y: 0}}
 			transition={{duration: 0.8, delay: 2, ease: 'easeIn'}}
