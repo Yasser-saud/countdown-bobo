@@ -73,7 +73,7 @@ export default function WaitlistPage() {
 					animate={{opacity: 1, y: 0}}
 					transition={{duration: 0.6, delay: 0.2}}
 					className={cn(
-						'from-foreground via-foreground/80 to-foreground/40 mb-6 cursor-crosshair bg-linear-to-b bg-clip-text text-3xl font-medium text-transparent sm:text-7xl',
+						'sticky top-0 from-foreground via-foreground/80 to-foreground/40 mb-6 cursor-crosshair bg-linear-to-b bg-clip-text text-3xl font-medium text-transparent sm:text-7xl',
 					)}
 				>
 					<span className="bg-secondary from-primary to-secondary/50 via-primary bg-clip-text text-transparent dark:bg-linear-to-b">
@@ -122,7 +122,10 @@ export default function WaitlistPage() {
 				</motion.div>
 
 				<div className="mt-8">
-					<PoemBlock text={currentPoem} className="" />
+					{/* <PoemBlock text={currentPoem} className="" /> */}
+					{poems.map((poem, i) => (
+						<PoemBlock key={i} text={poem} className="my-10" />
+					))}
 				</div>
 			</div>
 		</main>
